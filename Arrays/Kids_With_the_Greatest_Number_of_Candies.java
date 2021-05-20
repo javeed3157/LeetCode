@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+//Time:O(n)
+//Space:O(n)
 public class Kids_With_the_Greatest_Number_of_Candies {
     public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int maxi=candies[0];
