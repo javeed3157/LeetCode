@@ -1,3 +1,5 @@
+//Time:O(n)
+//Space:O(1)
 public class Running_Sum_of_1d_Array{
     public static int[] runningSum(int[] nums) {
         int sum=nums[0];
