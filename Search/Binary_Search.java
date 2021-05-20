@@ -1,3 +1,5 @@
+//Time:O(log(n))
+//Space:O(1)
 public class Binary_Search {
     public static int search(int[] nums, int target) {
         int s=0;
