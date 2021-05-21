@@ -18,7 +18,7 @@ public class Shuffle_the_Array {
         int ar[]={1,2,3,4,4,3,2,1};
         int in=4;
         for(int i:shuffle(ar,in)){
-            System.out.print(i+",");
+            System.out.print(i+" ");
         }
     }
 }
