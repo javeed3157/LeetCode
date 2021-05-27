@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Arrays",
-        "Search"
+        "Search",
+        "Recursion"
     ]
 }
