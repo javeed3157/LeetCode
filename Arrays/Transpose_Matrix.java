@@ -1,5 +1,5 @@
-//Time:O(n^2)
-//Space:O(n)
+//Time:O(m*n)
+//Space:O(m+n)
 public class Transpose_Matrix {
     public static int[][] transpose(int[][] matrix) {
         if(matrix.length==matrix[0].length){
