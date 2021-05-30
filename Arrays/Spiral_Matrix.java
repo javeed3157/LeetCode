@@ -1,3 +1,5 @@
+//Time:O(n^2)
+//Space:O(n)
 import java.util.ArrayList;
 import java.util.List;
 public class Spiral_Matrix {
