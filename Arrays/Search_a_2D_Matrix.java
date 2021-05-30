@@ -1,4 +1,4 @@
-//Time:O(n)
+//Time:O(n+m)
 //Space:O(1)
 //This problem can be solved in two ways by taking base(matrix.length-1,0) or base(0,matrix[0].length-1)
 public class Search_a_2D_Matrix {
