@@ -1,3 +1,5 @@
+//Time:O(n)
+//Space:O(1)
 import java.util.Arrays;
 public class Two_Sum {
     public static int[] twoSum(int[] nums, int target) {
