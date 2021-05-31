@@ -2,6 +2,7 @@
     "java.project.sourcePaths": [
         "Arrays",
         "Search",
-        "Recursion"
+        "Recursion",
+        "String"
     ]
 }
