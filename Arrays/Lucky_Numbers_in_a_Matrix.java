@@ -1,5 +1,5 @@
-//Time:O(n^2)
-//Space:O(n)
+//Time:O(m*n)
+//Space:O(m+n)
 import java.util.ArrayList;
 import java.util.List;
 public class Lucky_Numbers_in_a_Matrix {
