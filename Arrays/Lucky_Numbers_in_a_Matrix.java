@@ -8,7 +8,6 @@ public class Lucky_Numbers_in_a_Matrix {
         List<Integer> li1=new ArrayList<Integer>();
         List<Integer> li2=new ArrayList<Integer>();
         int rmin=Integer.MAX_VALUE;
-        int rmax=-1;
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
                 if(rmin>matrix[i][j]){
@@ -19,7 +18,7 @@ public class Lucky_Numbers_in_a_Matrix {
             rmin=Integer.MAX_VALUE;
         }
         int cmax=Integer.MIN_VALUE;
-        int rowst=0,colst=0,rowen=matrix.length,colen=matrix[0].length;
+        int rowen=matrix.length,colen=matrix[0].length;
         for(int i=0;i<colen;i++){
             for(int j=0;j<rowen;j++){
                 if(matrix[j][i]>cmax){
