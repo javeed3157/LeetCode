@@ -1,4 +1,4 @@
-//Time:O(n)
+//Time:O(nlogn)
 //Space:O(1)
 import java.util.Arrays;
 public class Mean_of_Array_After_Removing_Some_Elements{
