@@ -18,7 +18,7 @@ public class Remove_Duplicates_from_Sorted_Array {
         int a=removeDuplicates(arr);
         System.out.println(a);
         for(int i=0;i<a;i++){
-            System.out.print(i+" ");
+            System.out.print(arr[i]+" ");
         }
     }
 }
