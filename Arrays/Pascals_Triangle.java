@@ -5,18 +5,16 @@ import java.util.ArrayList;
 public class Pascals_Triangle {
     public static List<List<Integer>> generate(int numRows) {
         List<List<Integer>> arr=new ArrayList<List<Integer>>();
-        List<Integer> r,p=null;
         for(int i=0;i<numRows;i++){
-            r=new ArrayList<Integer>();
+            List<Integer> r=new ArrayList<Integer>();
             for(int j=0;j<=i;j++){
                 if(j==0 || j==i){
                     r.add(1);
                 }
                 else{
-                    r.add(p.get(j-1)+p.get(j));
+                    r.add(arr.get(i-1).get(j-1)+arr.get(i-1).get(j));
                 }
             }
-            p=r;
             arr.add(r);
         }
         return arr;
