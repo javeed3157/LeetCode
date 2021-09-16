@@ -2,6 +2,9 @@
 //Space:O(1)
 public class Find_Smallest_Letter_Greater_Than_Target {
     public static char nextGreatestLetter(char[] a, char target) {
+        if(target>=a[a.length-1]){
+            return a[0];
+        }
         int l=0;
         int h=a.length-1;
         while(l<=h){
