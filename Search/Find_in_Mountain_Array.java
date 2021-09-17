@@ -1,4 +1,5 @@
-
+//Time:O(log(n))
+//Space:O(1)
 public class Find_in_Mountain_Array{
     public interface MountainArray {
         public int get(int index);
