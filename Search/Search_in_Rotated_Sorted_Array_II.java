@@ -27,7 +27,7 @@ public class Search_in_Rotated_Sorted_Array_II {
                 }
                 h-=1;
             }
-            else if(nums[l]<nums[mid] || nums[l]==nums[mid] && nums[mid]>nums[h]){
+            else if(nums[l]<nums[mid] || nums[l]==nums[mid]){
                 l=mid+1;
             }
             else{
