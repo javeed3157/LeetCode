@@ -1,4 +1,4 @@
-//Time:O(nlog(n))
+//Time:O(n(log(n)))
 //Space:O(1)
 import java.util.Arrays;
 public class Contains_Duplicate {
