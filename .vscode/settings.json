@@ -5,6 +5,7 @@
         "Recursion",
         "String",
         "Math",
-        "Sort"
+        "Sort",
+        "Bitwise"
     ]
 }
