@@ -1,5 +1,3 @@
-//Time:O(n*2^n)
-//Space:O(n)
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,14 +8,28 @@ class Solutions {
         subsetcreate(nums,li,l,0);
         return li;
     }
+    //Time:O(2^n)
+    //Space:O(n)
     public void subsetcreate(int[] arr,List<List<Integer>> li,List<Integer> l,int start ){
-        li.add(new ArrayList<>(l));
-        for(int i=start;i<arr.length;i++){
-            l.add(arr[i]);
-            subsetcreate(arr,li,l,i+1);
-            l.remove(l.size()-1);
+        if(start==arr.length){
+            li.add(new ArrayList<>(l));
+            return;
         }
+        l.add(arr[start]);
+        subsetcreate(arr,li,l,start+1);
+        l.remove(l.size()-1);
+        subsetcreate(arr,li,l,start+1);
     }
+    //Time:O(n*2^n)
+    //Space:O(n)
+    // public void subsetcreate(int[] arr,List<List<Integer>> li,List<Integer> l,int start ){
+    //     li.add(new ArrayList<>(l));
+    //     for(int i=start;i<arr.length;i++){
+    //         l.add(arr[i]);
+    //         subsetcreate(arr,li,l,i+1);
+    //         l.remove(l.size()-1);
+    //     }
+    // }
 }
 public class Subsets {
     public static void main(String[] args) {
