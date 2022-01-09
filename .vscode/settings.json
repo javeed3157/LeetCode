@@ -6,6 +6,7 @@
         "String",
         "Math",
         "Sort",
-        "Bitwise"
+        "Bitwise",
+        "LinkedList"
     ]
 }
