@@ -1,5 +1,5 @@
 //Time:O(n/2)
-//Space:O(n)
+//Space:O(1)
 class Solution {
     public class ListNode {
         int val;
