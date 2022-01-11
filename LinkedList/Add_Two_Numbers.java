@@ -1,5 +1,5 @@
 // Time:O(max(l1,l2))
-// Space:O(n)
+// Space:O(max(l1,l2))
 class Solution {
     public class ListNode {
         int val;
