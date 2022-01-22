@@ -7,6 +7,7 @@
         "Math",
         "Sort",
         "Bitwise",
-        "LinkedList"
+        "LinkedList",
+        "Stack"
     ]
 }
