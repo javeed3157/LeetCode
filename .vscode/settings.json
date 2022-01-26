@@ -8,6 +8,7 @@
         "Sort",
         "Bitwise",
         "LinkedList",
-        "Stack"
+        "Stack",
+        "Queue"
     ]
 }
