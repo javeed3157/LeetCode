@@ -63,12 +63,13 @@ class MyQueue {
 //     }
 // }
 
-public class Implement_Queue_using_Stacks {
-    public static void main(String[] args) {
-        // MyQueue obj = new MyQueue();
-        // obj.push(x);
-        // int param_2 = obj.pop();
-        // int param_3 = obj.peek();
-        // boolean param_4 = obj.empty();
+    public class Implement_Queue_using_Stacks {
+        public static void main(String[] args) {
+            // MyQueue obj = new MyQueue();
+            // obj.push(x);
+            // int param_2 = obj.pop();
+            // int param_3 = obj.peek();
+            // boolean param_4 = obj.empty();
+        }
     }
 }
