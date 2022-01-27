@@ -1,34 +1,67 @@
-// Time:O(n)
-// Space:O(n)
 import java.util.Stack;
+// Time:O(1) amortized
+// Space:O(n)
 class MyQueue {
-    Stack<Integer> s1;
-    Stack<Integer> s2;
+    Stack<Integer> sin;
+    Stack<Integer> sout;
     public MyQueue() {
-        s1 = new Stack<>();
-        s2 = new Stack<>();
+        sin = new Stack<>();
+        sout = new Stack<>();
     }
     public void push(int x) {
-        while(!s1.isEmpty()){
-            s2.push(s1.pop());
-        }
-        s1.push(x);
-        while(!s2.isEmpty()){
-            s1.push(s2.pop());
-        }
-    }    
+        sin.push(x);
+    }  
     public int pop() {
-        return s1.pop();
+        if(!sout.isEmpty()){
+            return sout.pop();
+        }
+        while(!sin.isEmpty()){
+            sout.push(sin.pop());
+        }
+        return sout.pop();
     }
     
     public int peek() {
-        return s1.peek();
+        if(!sout.isEmpty()){
+            return sout.peek();
+        }
+        while(!sin.isEmpty()){
+            sout.push(sin.pop());
+        }
+        return sout.peek();
     }
+
+// Time:O(n)
+// Space:O(n)
+
+// class MyQueue {
+//     Stack<Integer> s1;
+//     Stack<Integer> s2;
+//     public MyQueue() {
+//         s1 = new Stack<>();
+//         s2 = new Stack<>();
+//     }
+//     public void push(int x) {
+//         while(!s1.isEmpty()){
+//             s2.push(s1.pop());
+//         }
+//         s1.push(x);
+//         while(!s2.isEmpty()){
+//             s1.push(s2.pop());
+//         }
+//     }    
+//     public int pop() {
+//         return s1.pop();
+//     }
     
-    public boolean empty() {
-        return s1.isEmpty();
-    }
-}
+//     public int peek() {
+//         return s1.peek();
+//     }
+    
+//     public boolean empty() {
+//         return s1.isEmpty();
+//     }
+// }
 
 public class Implement_Queue_using_Stacks {
     public static void main(String[] args) {
