@@ -23,8 +23,8 @@ public class Pow_x_n{
         return ans;
     }
     public static void main(String[] args) {
-        int x = 200000;
-        int n = 10;
+        double x = 2.00000;
+        int n = 8;
         System.out.println((myPow(x, n)));
     }
 }
