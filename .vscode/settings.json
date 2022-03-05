@@ -9,6 +9,7 @@
         "Bitwise",
         "LinkedList",
         "Stack",
-        "Queue"
+        "Queue",
+        "Tree"
     ]
 }
