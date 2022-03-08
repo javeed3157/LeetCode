@@ -3,17 +3,37 @@
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> l = new ArrayList<>();
-        preorder(root, l);
+        if(root == null){
+            return l;
+        }
+        Stack<TreeNode> st = new Stack<>();
+        st.push(root);
+        while(!st.isEmpty()){
+            root = st.pop();
+            l.add(root.val);
+            if(root.right!=null){
+                st.push(root.right);
+            }
+            if(root.left != null){
+                st.push(root.left);
+            }
+        }
         return l;
     }
-    public void preorder(TreeNode root, List<Integer> l){
-        if(root == null){
-            return;
-        }
-        l.add(root.val);
-        preorder(root.left, l);
-        preorder(root.right, l);
-    }
+
+    // public List<Integer> preorderTraversal(TreeNode root) {
+    //     List<Integer> l = new ArrayList<>();
+    //     preorder(root, l);
+    //     return l;
+    // }
+    // public void preorder(TreeNode root, List<Integer> l){
+    //     if(root == null){
+    //         return;
+    //     }
+    //     l.add(root.val);
+    //     preorder(root.left, l);
+    //     preorder(root.right, l);
+    // }
 }
 /**
  * Definition for a binary tree node.
