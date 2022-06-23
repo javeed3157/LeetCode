@@ -10,6 +10,7 @@
         "LinkedList",
         "Stack",
         "Queue",
-        "Tree"
+        "Tree",
+        "Greedy"
     ]
 }
