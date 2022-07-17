@@ -1,3 +1,5 @@
+//Time:O(100+100)
+//Space:O(101)
 public class Maximum_Number_of_Pairs_in_Array {
     public static int[] numberOfPairs(int[] nums) {
         int count = 0;
@@ -12,7 +14,8 @@ public class Maximum_Number_of_Pairs_in_Array {
             left += freq[i]%2;
         }
         return new int[]{count,left};
-//     
+//Time:O(n^2)
+//Space:O(1)
         // int count = 0;
 //         int left = 0;
 //         int n = nums.length;
