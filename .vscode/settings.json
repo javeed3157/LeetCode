@@ -11,6 +11,7 @@
         "Stack",
         "Queue",
         "Tree",
-        "Greedy"
+        "Greedy",
+        "Graph"
     ]
 }
