@@ -1,5 +1,5 @@
-//Time:O(n)
-//Space:O(n)
+//Time: O(n)
+//Space: O(n)
 public class Number_of_Good_Pairs {
     public static int numIdenticalPairs(int[] nums) {
         int count=0;
