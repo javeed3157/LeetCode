@@ -23,6 +23,7 @@ public class Find_K_Closest_Elements {
         int[] arr = {1,2,3,4,5};
         int k = 4;
         int x = 3;
+        // int x = -1
         List<Integer> list = findClosestElements(arr, k, x); 
         for(int i = 0; i < list.size(); i++){
             System.out.print(list.get(i) + " ");
