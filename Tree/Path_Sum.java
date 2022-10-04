@@ -11,6 +11,7 @@ class Solution {
         return hasPathSum(root.left , targetSum - root.val) || hasPathSum(root.right , targetSum - root.val);
     }
 }
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
