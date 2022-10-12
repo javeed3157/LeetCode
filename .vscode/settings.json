@@ -12,6 +12,7 @@
         "Queue",
         "Tree",
         "Greedy",
-        "Graph"
+        "Graph",
+        "SQL"
     ]
 }
