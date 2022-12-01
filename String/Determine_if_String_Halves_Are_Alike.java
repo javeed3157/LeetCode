@@ -20,7 +20,8 @@ public class Determine_if_String_Halves_Are_Alike {
         return c1 == c2;
     }
     public static void main(String[] args) {
-        String s = "book";
+        // String s = "book"
+        String s = "textbook";
         System.out.println(halvesAreAlike(s));
     }
 }
